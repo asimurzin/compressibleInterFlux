@@ -26,14 +26,14 @@
 
 #----------------------------------------------------------------------------
 from Foam import FOAM_VERSION
-if FOAM_VERSION( ">=", "010701" ):
+if FOAM_VERSION( "==", "010701" ):
     from compressibleInterFlux.r1_7_1 import *
     pass
 
 
 #--------------------------------------------------------------------------------------
 from Foam import FOAM_VERSION
-if FOAM_VERSION( ">=", "020000" ):
+if FOAM_VERSION( "==", "020000" ) or FOAM_VERSION( "==", "020001" ):
     from compressibleInterFlux.r2_0_0 import *
     pass
 
